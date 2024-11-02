@@ -37,9 +37,9 @@ from fairscale.nn.model_parallel.initialize import (
 # from llama.model import ModelArgs, Transformer
 # from llama.tokenizer import ChatFormat, Dialog, Message, Tokenizer
 # new imports
-from llama_models.llama3_1.api import ModelArgs
-from llama_models.llama3_1.api import Transformer
-from llama_models.llama3_1.api import Tokenizer
+from llama_models.llama3.api import ModelArgs
+from llama_models.llama3.reference_impl.model import Transformer
+from llama_models.llama3.api import Tokenizer
 
 class CompletionPrediction(TypedDict, total=False):
     generation: str
